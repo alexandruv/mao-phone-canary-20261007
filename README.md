@@ -1,6 +1,20 @@
 # mao-phone-canary-20261007
 Disposable phone-first Paseo orchestrator integration proof; PRs remain unmerged
 
+## Greeting page
+
+Open `index.html` in a browser to see `Hello from my phone` and today’s date
+in `YYYY-MM-DD` format. The date uses the browser’s local timezone and is
+calculated on each page load; reload the page after midnight to update it.
+JavaScript must be enabled. No installation or build step is required.
+
+Run the greeting page tests with Node.js (version 18 or newer):
+
+```sh
+node --test greeting.test.cjs
+git diff --check
+```
+
 ## Unattended phone intake
 
 Use the persistent Paseo intake from the phone to submit a task with its repository,
