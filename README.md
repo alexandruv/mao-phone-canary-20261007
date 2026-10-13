@@ -3,10 +3,11 @@ Disposable phone-first Paseo orchestrator integration proof; PRs remain unmerged
 
 ## Greeting page
 
-Open `index.html` in a browser to see `Hello from my phone` and today’s date
+Open `index.html` in a browser to see `Hello World` and today’s date
 in `YYYY-MM-DD` format. The date uses the browser’s local timezone and is
 calculated on each page load; reload the page after midnight to update it.
-JavaScript must be enabled. No installation or build step is required.
+JavaScript must be enabled for the date; the greeting displays without it.
+No installation or build step is required.
 
 Run the greeting page tests with Node.js (version 18 or newer):
 

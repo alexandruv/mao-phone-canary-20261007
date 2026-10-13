@@ -6,8 +6,9 @@ const { runInNewContext } = require('node:vm');
 const html = readFileSync(`${__dirname}/index.html`, 'utf8');
 const script = readFileSync(`${__dirname}/greeting.js`, 'utf8');
 
-test('page includes the exact greeting and loads the date script', () => {
-  assert.match(html, /<h1>Hello from my phone<\/h1>/);
+test('page displays Hello World with a matching title and loads the date script', () => {
+  assert.match(html, /<h1>Hello World<\/h1>/);
+  assert.match(html, /<title>Hello World<\/title>/);
   assert.match(html, /<time id="today"><\/time>/);
   assert.match(html, /<script src="greeting\.js" defer><\/script>/);
   assert.match(html, /name="viewport"/);
